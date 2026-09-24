@@ -1,0 +1,11 @@
+# carregar todos
+GET http://localhost:3000/api/v1/openings
+
+# cadastrar um novo
+POST http://localhost:3000/api/v1/openings
+
+# editar
+PUT http://localhost:3000/api/v1/openings
+
+# deletar
+DELETE  http://localhost:3000/api/v1/openings
