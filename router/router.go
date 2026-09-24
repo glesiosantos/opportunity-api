@@ -3,13 +3,13 @@ package router
 import "github.com/gin-gonic/gin"
 
 func Initialize() {
+
+	// Initialize router
 	router := gin.Default()
 
-	router.GET("/", func(ctx *gin.Context) {
-		ctx.JSON(200, gin.H{
-			"message": "Hello, World",
-		})
-	})
+	// Initialize routers
+	initializeRoutes(router)
 
+	// Run server
 	router.Run(":3000")
 }
